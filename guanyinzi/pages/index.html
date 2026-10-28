@@ -5,64 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>关尹子 · 藏书阁</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { min-height:100vh; font-family:"PingFang SC","Microsoft YaHei",sans-serif;
-    background:linear-gradient(160deg,#2b1055 0%,#7597de 55%,#f7c8d8 130%);
-    color:#fdfaff; padding:28px 18px 48px; }
-  .card { max-width:720px; margin:0 auto; background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.25); border-radius:24px; padding:34px 30px 28px;
-    backdrop-filter:blur(8px); box-shadow:0 24px 60px rgba(20,0,50,.35); }
-  .badge { display:inline-block; font-size:12px; letter-spacing:2px; padding:5px 12px;
-    border:1px solid rgba(255,255,255,.45); border-radius:999px; opacity:.9; }
-  h1 { font-size:30px; margin:16px 0 8px; font-weight:700; }
-  .sub { opacity:.88; font-size:14.5px; line-height:1.8; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; margin-top:24px; }
-  .cell { display:block; text-decoration:none; color:#fdfaff; background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:16px 14px; transition:transform .12s; }
-  .cell:active { transform:scale(.97); }
-  .cell .big { font-family:"Songti SC","Noto Serif SC",serif; font-size:26px; }
-  .cell .epi { font-size:13px; opacity:.85; margin-top:4px; line-height:1.6; }
-  .cell .st { font-size:12px; margin-top:8px; color:#ffe9a8; }
-  .bar { height:6px; border-radius:3px; background:rgba(255,255,255,.18); margin-top:8px; overflow:hidden; }
-  .bar i { display:block; height:100%; background:#ffd93d; border-radius:3px; }
-  .back { display:inline-block; margin-bottom:18px; color:#ffe9a8; text-decoration:none; font-size:14px; }
-  .ju { font-family:"Songti SC","Noto Serif SC",serif; font-size:17.5px; line-height:2.05;
-    margin:18px 0; text-align:justify; }
-  .ju .no { font-family:"PingFang SC",sans-serif; font-size:11px; color:#ffe9a8; opacity:.75;
-    letter-spacing:1px; display:block; margin-bottom:2px; }
-  .wait { font-size:16px; line-height:2; opacity:.9; margin-top:18px; }
-  .foot { margin-top:30px; font-size:12.5px; line-height:1.9; opacity:.65;
-    border-top:1px dashed rgba(255,255,255,.3); padding-top:16px; text-align:center; }
+body { font-family: serif; color: #000; background: #fff; line-height: 1.9; max-width: 42em; margin: 2em auto; padding: 0 1em; }
+h1 { font-size: 1.4em; font-weight: normal; }
+a { color: #000; }
+.ju { margin: 0 0 1.2em; }
+.jid { font-size: .8em; color: #888; }
+.foot { margin-top: 3em; font-size: .85em; color: #555; }
+ul { line-height: 2.1; }
 </style>
 </head>
 <body>
-<div class="card">
-<span class="badge">INFP.SI · 汉川小站 · 藏书阁</span>
-<h1>📖 文始真經 · 關尹子</h1>
-<p class="sub">舊本題周尹喜撰。九篇一百七十六句，与《道德經》同源而别流。<br>
-本站逐页据书影转录，录满一篇，点亮一篇。现已录 167 / 167 句。</p>
-<div class="grid">
-<a class="cell" href="01.html"><span class="big">宇篇</span>
-<div class="epi">第一 · 宇者道也</div>
-<div class="st">已录 28 / 28 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="02.html"><span class="big">柱篇</span>
-<div class="epi">第二 · 柱者建天地也</div>
-<div class="st">已录 12 / 12 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="03.html"><span class="big">极篇</span>
-<div class="epi">第三 · 极者尊圣人也</div>
-<div class="st">已录 27 / 27 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="04.html"><span class="big">符篇</span>
-<div class="epi">第四 · 符者精神魂魄也</div>
-<div class="st">已录 16 / 16 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="05.html"><span class="big">鉴篇</span>
-<div class="epi">第五 · 鉴者心也</div>
-<div class="st">已录 19 / 19 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="06.html"><span class="big">匕篇</span>
-<div class="epi">第六 · 匕者食也食者形也</div>
-<div class="st">已录 16 / 16 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="07.html"><span class="big">釜篇</span>
-<div class="epi">第七 · 釜者化也</div>
-<div class="st">已录 12 / 12 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="08.html"><span class="big">筹篇</span>
-<div class="epi">第八 · 筹者物也</div>
-<div class="st">已录 6 / 6 句</div><div class="bar"><i style="width:100%"></i></div></a><a class="cell" href="09.html"><span class="big">药篇</span>
-<div class="epi">第九 · 药者杂治也</div>
-<div class="st">已录 31 / 31 句</div><div class="bar"><i style="width:100%"></i></div></a>
-</div>
-<p class="foot">文始真經 · 關尹子 — 逐页据纸本书影转录 · 正文只存原样，不加校勘记号<br>真伪未决、层累待考 · 四库定性：虽出於依託，不可廢也</p>
-</div>
+<h1>关尹子</h1>
+<p>文始真經，旧本题周尹喜撰，九篇。</p>
+<ul>
+<li><a href="01.html">宇篇</a>（宇者道也） — 28 段</li>
+<li><a href="02.html">柱篇</a>（柱者建天地也） — 12 段</li>
+<li><a href="03.html">极篇</a>（极者尊圣人也） — 27 段</li>
+<li><a href="04.html">符篇</a>（符者精神魂魄也） — 16 段</li>
+<li><a href="05.html">鉴篇</a>（鉴者心也） — 19 段</li>
+<li><a href="06.html">匕篇</a>（匕者食也食者形也） — 16 段</li>
+<li><a href="07.html">釜篇</a>（釜者化也） — 12 段</li>
+<li><a href="08.html">筹篇</a>（筹者物也） — 6 段</li>
+<li><a href="09.html">药篇</a>（药者杂治也） — 31 段</li>
+</ul>
+<p class="foot">逐页据纸本书影转录，正文只存原样，不加校勘记号。<br>真伪未决、层累待考 · 四库定性：虽出於依託，不可廢也</p>
+<p class="foot">已录 167 / 167 段。</p>
 </body>
 </html>
